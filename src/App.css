@@ -1,0 +1,10 @@
+.page-content {
+	@apply flex flex-col
+}
+
+.half-page {
+	@apply m-auto flex w-1/2 flex-col items-center overflow-hidden
+				 md:w-full
+				 first:md:mb-[5vh] first:md:mt-[10vh]
+				 last:md:mb-[10vh] last:md:mt-[5vh]
+}

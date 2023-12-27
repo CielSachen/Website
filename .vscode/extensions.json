@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"aaron-bond.better-comments",
+		"bradlc.vscode-tailwindcss",
+		"dbaeumer.vscode-eslint",
+		"pmneo.tsimporter",
+		"vunguyentuan.vscode-css-variables"
+	]
+}

@@ -1,0 +1,7 @@
+.error-main {
+  @apply m-auto flex h-screen flex-col items-center justify-center text-center
+}
+
+.error-main-message-container {
+  @apply mb-5 mt-3 rounded-lg bg-slate-200 px-4
+}

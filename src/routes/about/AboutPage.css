@@ -1,0 +1,19 @@
+.about-main {
+	@apply flex h-[calc(100vh-64px)] flex-row
+				 md:h-full md:flex-col
+}
+
+.about-contacts {
+	@apply flex h-[50vh] flex-row bg-red-900 text-white
+				 md:h-full md:flex-col
+}
+
+.about-contacts-social {
+	@apply mb-5 flex justify-center
+}
+
+.about-education-image {
+	background-image: url(../../assets/images/dlszv_campus.jpg);
+	@apply h-[calc(100vh-64px)] w-full bg-cover bg-center bg-no-repeat
+				 md:h-[50vh]
+}

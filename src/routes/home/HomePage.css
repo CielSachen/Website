@@ -1,0 +1,17 @@
+.home-hero-image {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../../assets/images/hero_image.png);
+	@apply flex h-[calc(100vh-64px)] flex-row bg-cover bg-center bg-no-repeat
+}
+
+.hero-image-text {
+	@apply w-3/5 text-left text-white
+				 md:w-full md:text-center
+}
+
+@media (max-width: 600px) {
+	.home-hero-image {
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/profile_picture.jpeg);
+		@apply h-[calc(100vh-56px)] flex-col
+					 landscape:h-[calc(100vh-48px)]
+	}
+}

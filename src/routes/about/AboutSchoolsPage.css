@@ -1,0 +1,44 @@
+.about-schools-main {
+	background-image: linear-gradient(to right, rgba(183, 28, 28, 1), rgba(183, 28, 28, 0.8)), url(../../assets/images/dlsz_campus.jpg);
+	@apply flex h-[calc(65vh-64px)] flex-row bg-cover bg-center bg-no-repeat
+}
+
+.about-schools-timeline {
+	@apply m-auto
+				 md:mx-4
+}
+
+.about-schools-timeline-left {
+	@apply flex w-[32.5%] flex-col overflow-hidden whitespace-pre-line pt-20
+}
+
+.about-schools-timeline-left-text {
+	@apply mr-4 text-right
+				 md:ml-4 md:mr-0 md:text-left
+}
+
+.about-schools-timeline-right {
+	border-left: 2px solid #B71C1C;
+	@apply flex w-[67.5%] flex-col overflow-hidden py-20
+}
+
+.about-schools-timeline-right-text {
+	@apply ml-4 mr-0 block
+				 md:ml-auto
+}
+
+@media (max-width: 900px) {
+	.about-schools-main {
+		background-image: linear-gradient(to right, rgba(183, 28, 28, 0.9), rgba(183, 28, 28, 0.9)), url(../../assets/images/dlsz_campus.jpg);
+		@apply h-full flex-col
+	}
+
+	.about-schools-timeline-left {
+		border-left: 2px solid #B71C1C;
+		@apply w-full pt-20
+	}
+
+	.about-schools-timeline-right {
+		@apply w-full pt-4
+	}
+}
