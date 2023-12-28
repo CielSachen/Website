@@ -44,7 +44,10 @@ export function Topbar(props: Props) {
           fontWeight="bold"
           to="/"
           variant="h6"
-        >C I E L</Typography>
+        >{userConfigs.name
+            .toUpperCase()
+            .split('')
+            .join(' ')}</Typography>
         <div className="grow" />
         <Tooltip title={`Toggle ${theme.palette.mode === 'dark'
           ? 'Dark'
