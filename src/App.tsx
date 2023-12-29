@@ -15,14 +15,15 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { ErrorElement, MainLayout } from './components/layout';
 import { appRoutes, createRouteObjects } from './routes';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+const ColorModeContext = createContext({ toggleColorMode: () => {} });
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const rootElement = document.getElementById('root')!;
+
 export function App() {
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  const ColorModeContext = createContext({ toggleColorMode: () => {} });
   const [mode, setMode] = useState<PaletteMode>(useMediaQuery('(prefers-color-scheme: dark)')
     ? 'dark'
     : 'light');
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  const rootElement = document.getElementById('root')!;
   const colorMode = useMemo(() => ({ toggleColorMode: () => {
     setMode((prevMode) => (prevMode === 'light'
       ? 'dark'
@@ -39,7 +40,7 @@ export function App() {
       primary: red,
       mode,
     },
-  }), [mode, rootElement]);
+  }), [mode]);
   const router = createHashRouter([{
     path: '/',
     element: <MainLayout colorModeContext={ColorModeContext} />,
